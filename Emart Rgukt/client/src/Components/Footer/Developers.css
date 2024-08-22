@@ -1,0 +1,129 @@
+.developers-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: aliceblue;
+}
+
+.developers-container h1 {
+  font-weight: bold;
+  margin: 50px auto;
+}
+
+.developer-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+
+.developer-card:hover {
+  transform: translateY(-5px);
+}
+
+.developer-photo {
+  width: 200px; /* Increase the width */
+  height: 150px; /* Increase the height */
+  object-fit: contain; /* Ensures the image covers the entire container */
+  margin-right: 20px;
+  display: block; /* Ensures proper alignment */
+  margin: 0 auto; /* Centers the image horizontally */
+  
+}
+
+.developer-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 70px;
+}
+
+.developer-details h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.developer-details p {
+  font-size: 1em;
+  margin-bottom: 15px;
+  color: #555555;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  font-size: 1.5em;
+  color: #7037a1;
+  transition: color 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: orange;
+}
+
+@media (max-width: 768px) {
+  .developer-card {
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+
+  .developer-photo {
+    width: 100%; /* Ensures image is responsive */
+    height: auto; /* Maintains aspect ratio */
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .developer-details {
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .developer-details h2 {
+    font-size: 1.2em; /* Adjust font size for smaller screens */
+  }
+
+  .developer-details p {
+    font-size: 0.9em; /* Adjust font size for smaller screens */
+  }
+
+  .social-icons {
+    justify-content: center; /* Centers icons */
+  }
+}
+
+@media (max-width: 480px) {
+  .developers-container h1 {
+    font-size: 1.5em; /* Adjust font size for smaller screens */
+  }
+
+  .developer-card {
+    padding: 10px; /* Further reduce padding for very small screens */
+  }
+
+  .developer-details h2 {
+    font-size: 1em; /* Further adjust font size */
+  }
+
+  .developer-details p {
+    font-size: 0.8em; /* Further adjust font size */
+  }
+
+  .social-icons a {
+    font-size: 1.2em; /* Adjust icon size for smaller screens */
+  }
+}
