@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="spotiyClone.css">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Spotify - Music Player for Everyone</title>
+</head>
+
+<body>
+    <div class="main">
+        <div class="side-bar">
+            <div class="nav-div" style="opacity: 1;">
+                <div class="nav-option">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <div class="nav-option">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </div>
+            <div class="library">
+                <div class="options">
+                    <div class="lib-options nav-option">
+                        <img src="./assets/library_icon.png" alt="">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <div>
+                            <i class="fa-solid fa-plus"></i>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="lib-box">
+                    <div class="box">
+                        <div class="box-p1">
+                            Create Your first Playlist
+                        </div>
+                        <div class="box-p2">
+                            It's Easy, We will Help You !!
+                        </div>
+                        <button class="badge">
+                            Create Playlist
+                        </button>
+                    </div>
+                    <div class="box">
+                        <div class="box-p1">
+                            Let's Find Some Podcast to Follow
+                        </div>
+                        <div class="box-p2">
+                            We'll Keep Update You with the new Episodes
+                        </div>
+                        <button class="badge">
+                            Browse Podcasts
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <div>
+                        <img src="./assets/logo.png" alt="" style="height: 50px; width: 50px;">
+                        <img src="./assets/backward_icon.png" alt="">
+                        <img src="./assets/forward_icon.png" class="hide" alt="">
+                    </div>
+                    <p style="margin: 0.75rem 2.5rem;"><Span style="font-weight: bold; font-family: bree-serif; font-size: 20px;">Spotify</Span> - Enjoy the Realm Of Music</p>
+                </div>
+                <div class="sticky-nav-options">
+                    <i class="fa-solid fa-search" style="margin:1rem 2rem;"></i>
+                    <button class="badge hide">
+                        Explore Premium
+                    </button>
+                    <button class="badge dark-badge">
+                        <i class="fa-solid fa-download" style="margin-right: 5px;"></i>
+                        Install App
+                    </button>
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+
+            <h2 style="font-weight: Bold; font-size: 20px; margin-top: 2rem;">
+                Recently Played
+            </h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img" alt="">
+                    <p class="card-title">
+                        Top - 50 Global
+                    </p>
+                    <p class="card-info">
+                        Your most Played Tracks Are Here..
+                    </p>
+                </div>
+            </div>
+
+            <h2 style="font-weight: Bold; font-size: 20px;">
+                Trending
+            </h2>
+
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card2img.jpeg" class="card-img" alt="">
+                    <p class="card-title">
+                        Most Played - Album
+                    </p>
+                    <p class="card-info">
+                        Your most Played Album is here..
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card3img.jpeg" class="card-img" alt="">
+                    <p class="card-title">
+                        Hindi - Music Manza
+                    </p>
+                    <p class="card-info">
+                        Explore the Mantra Of Music..
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card4img.jpeg" class="card-img" alt="">
+                    <p class="card-title">
+                        Telugu - Bonanza
+                    </p>
+                    <p class="card-info">
+                        Rocking Style Of the Tamilians..
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" class="card-img" alt="">
+                    <p class="card-title">
+                        Tamil - Bonanza
+                    </p>
+                    <p class="card-info">
+                        Rocking Style Of the Tamilians..
+                    </p>
+                </div>
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" class="card-img" alt="">
+                    <p class="card-title">
+                        Hindi - Bonanza
+                    </p>
+                    <p class="card-info">
+                        Rocking Style Of the Tamilians..
+                    </p>
+                </div>
+            </div>
+
+            <h2 style="font-weight: Bold; font-size: 20px;">
+                Featured Charts
+            </h2>
+            <div class="cards-container">
+                <div class="card">
+                    <img src="./assets/card1img.jpeg" class="card-img" alt="">
+                    <p class="card-title">
+                        Top - 50 Global
+                    </p>
+                    <p class="card-info">
+                        Your most Played Tracks Are Here..
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card5img.jpeg" class="card-img" alt="">
+                    <p class="card-title">
+                        Explore The vibe
+                    </p>
+                    <p class="card-info">
+                        Embedded in Every lyric..
+                    </p>
+                </div>
+
+                <div class="card">
+                    <img src="./assets/card6img.jpeg" class="card-img" alt="">
+                    <p class="card-title">
+                        Indian-Most Played
+                    </p>
+                    <p class="card-info">
+                    Indulge in Diverse Traditions..
+                    </p>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="line">
+
+                </div>
+            </div>
+        </div>
+        <div class="music-player">
+            <div class="album" style="display: flex;">
+                <img src="./assets/logo.png" class="album-icon" alt="">
+                <div class="album-controls">
+                    <p>Daylight</p>
+                    <p style="opacity: 0.5; margin: -15px 0px 15px 0px;">Arjit Singh</p>
+                </div>
+                <div class="album-icons">
+                    <i class="fa-solid fa-heart "></i>
+                    <i class="fa-solid fa-image"></i>
+                </div>
+            </div>
+            <div class="player">
+                <div class="player-controls">
+                    <img src="./assets/player_icon1.png" class="player-control-icon" alt="">
+                    <img src="./assets/player_icon2.png" class="player-control-icon" alt="">
+                    <img src="./assets/player_icon3.png" class="player-control-icon play-icon" style="opacity: 1;">
+                    <img src="./assets/player_icon4.png" class="player-control-icon" alt="">
+                    <img src="./assets/player_icon5.png" class="player-control-icon" alt="">
+                </div>
+                <div class="playback-bar">
+                    <span class="cur-time">00:00</span>
+                    <input type="range" min="0" max="100" step="1" class="progress-bar">
+                    <span class="tot-time">5:45</span>
+                </div>
+            </div>
+            <div class="controls">
+                <div class="control-icons">
+                    <i class="fa-solid fa-tv"></i>
+                    <i class="fa-solid fa-headphones-simple"></i>
+                    <i class="fa-solid fa-grip-lines"></i>
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                </div>
+                <input type="range" min="0" max="50" step="1" class="music-bar">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
