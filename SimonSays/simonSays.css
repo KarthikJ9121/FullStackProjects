@@ -1,0 +1,65 @@
+body
+{
+    text-align: center;
+}
+
+h1
+{
+    font-family: 'Bree-serif';
+    font-weight: gold;
+}
+
+h3
+{
+    font: "Bree-Serif";
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.firstRow, .secondRow
+{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.orange, .purple, .green, .red
+{
+    margin: 10px;
+    height: 100px;
+    width: 125px;
+    border-radius: 15%;
+    border: 5px solid black; 
+    cursor: pointer;
+}
+
+.orange
+{
+    background-color: orange;
+}
+
+.purple
+{
+    background-color: purple;
+}
+
+.green
+{
+    background-color: green;
+}
+
+.red
+{
+    background-color: red;
+}
+
+.white-bg
+{
+    background-color: white;
+}
+
+.black-bg
+{
+    background-color: black;
+}
